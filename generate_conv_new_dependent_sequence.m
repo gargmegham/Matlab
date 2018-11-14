@@ -1,0 +1,11 @@
+n1=-3:3;
+x=[3 11 7 0 -1 4 2];
+n2=-1:4;
+h=[2 3 0 -5 2 1];
+[y,n]=conv_new(x,n1,h,n2);
+subplot(3,1,1);
+stem(n1,x);
+subplot(3,1,2);
+stem(n2,h);
+subplot(3,1,3);
+stem(n,y);
